@@ -34,7 +34,6 @@
     border: 2px solid grey;
     border-radius: 5px;
     max-width: 434px;
-    min-width: 434px;
     background-color: #f5f2f2;
     overflow: auto;
     
@@ -133,4 +132,5 @@
     stroke: #1e1e24;
     fill: #1e1e24;
 }
+
 
