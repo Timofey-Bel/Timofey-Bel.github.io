@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://img.icons8.com/?size=100&id=gphffx4TiIqs&format=png&color=000000">
+    
+    
+    <title>Timofey Belyaev</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="home">
+       <nav id="nav">
+        <div class="nav-center">
+          <div class="nav-header">
+            <img src="./logo.svg" alt="logo" class="logo">
+            <button class="nav-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <div class="links-container">
+            <ul class="links">
+               <li>
+                  <a href="#home" class="scroll-link">домой</a>
+                </li>
+                <li>
+                  <a href="#about" class="scroll-link">счетчик</a>
+                </li>
+                <li>
+                  <a href="#services" class="scroll-link">цвета</a>
+                </li>
+                <li>
+                  <a href="#tours" class="scroll-link">список дел</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+       </nav>
+       <div class="banner">
+        <div class="container">
+          <h1>Timofey Belyaev</h1>
+          <p>Позвольте мне превратить ваши технические требования в реальность, 
+            полную чистого кода и эффективных решений,
+             созданных специально для вашего проекта.
+          </p>
+          <a href="#tours" class="scroll-link btn btn-white">
+            показать список дел
+          </a>
+        </div>
+       </div>
+    </header>
+        <div class="container1" id="about">
+            <h1>
+                Счетчик
+            </h1>
+            <span id="value">0</span>
+            <div class="button-container">
+                <button class="btn decrease">уменьшить</button>
+                <button class="btn reset">обнулить</button>
+                <button class="btn increase">увеличить</button>
+            </div>
+        </div>
+      <script src="Counter.js"></script>
+    <section id="services" class="flippery">
+      <nav2>
+        <div class="nav-center2">
+            <h4 id="random-colors">Случайные цвета</h4>
+            <ul class="nav-links2">
+                <li>
+                  <a id="flipper">Простые</a>
+                </li>
+                <li>
+                  <a id="hex">Сложные</a>
+                </li>
+            </ul>
+        </div>
+    </nav2>
+        <div class="container2">
+            <h2>Цвет фона: <span class="color">#f1f5f8</span></h2>
+            <button class="btn btn-hero2" id="btn">Нажми на меня</button>
+        </div>
+  </section>
+    <section id="tours">
+      <div class="title">
+        <h2>Список<span>дел</span></h2>
+      </div>
+      <script type="module" src="./js-ToDoList/index.js" defer></script>
+      <div class="wrapper">
+        <div class="inner">
+            <form class="form">
+                <h4 class="form__title">Введите задачу
+                  <div class="form_ToDo">  
+                  <input type="text" id="searchInput" placeholder="Поиск дел...">
+                  <img src="./icon-clear_btn.svg" width="30" height="30" alt="clear-btn" class="clear-btn">
+                  <img src="./icon-search_btn.svg" width="30" height="30" alt="search" class="searchLogo">
+                  </div>
+                </h4>
+                <textarea class="form__textarea"></textarea>
+                <button class="form__send-btn" type="submit">Добавить</button>
+                <button class="form__cancel-btn none" type="button">Отмена</button>
+            </form>
+            <div class="output"></div>
+        </div>
+    </div>
+    </section>
+    <footer class="section">
+      <p>авторское право © Belyaev Timofey
+      <span id="date"></span> . все права защищены</p>
+    </footer>
+    <a href="#home" class="scroll-link top-link">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+    <script src="app.js"></script>
+  </body>
+</html>
