@@ -1,0 +1,229 @@
+.page-header {
+    text-align: center;
+    position: relative;
+    padding: 12px;
+    background-color: var(--white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    max-width: 1280px;
+    height: 167px;
+    margin: 40px;
+}
+
+.page-avatar {
+    position: relative;
+}
+
+.page-info {
+    display: flex;
+    justify-content: center;
+    font-family: "Involve-Medium", Helvetica;
+    font-size: 20px;
+    gap: 10px;
+    position: relative;
+}
+
+.page-login {
+    font-family: "Involve-Medium", Helvetica;
+    font-size: 12px;
+    position: relative;
+}
+
+.page-header-bg-1 {
+    position: absolute;
+    width: 560px;
+    height: 167px;
+    left: 0;
+    top: 0;
+    background-image: url('/assets/medx/img/main/settings/page-header-bg-1.png');
+    background-repeat: no-repeat;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.page-header-bg-2 {
+    position: absolute;
+    width: 860px;
+    height: 167px;
+    left: 430px;
+    top: 0;
+    background-image: url('/assets/medx/img/main/settings/page-header-bg-2.png');
+    background-repeat: no-repeat;
+    z-index: 0;
+    pointer-events: none;
+}
+
+section {
+    margin: 0 40px 40px;
+    position: relative;
+}
+
+.section-main-information, .section-login-information {
+    position: relative;
+    padding: 28px;
+    background-color: var(--white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    max-width: 1280px;
+    height: 267px;
+}
+
+.section-header {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1e2c41;
+    margin-bottom: 1.25rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.section-header::before {
+    content: "";
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1224px;
+    height: 1px;
+    background-color: rgba(0, 124, 137, 0.2);
+}
+
+.info-grid {
+    overflow: hidden;
+    display: flex;
+    gap: 40px;
+    margin: 35px 0 40px 0;
+}
+
+.form-section {
+    display: inline-grid;
+}
+
+.form-section input, select {
+    border-radius: 8px;
+    border: 1px solid rgb(0, 124, 137, 0.2);
+    height: 40px;
+    width: auto;
+    max-width: 250px;
+    padding: 9.5px 16px;
+    color: #28282F;
+    font-family: "Involve-Medium", Helvetica;
+    font-size: 16px;
+}
+
+.form-section label {
+    font-size: 12px;
+    font-family: "Involve-Bold", Helvetica;
+}
+
+#birthdate::-webkit-calendar-picker-indicator {
+    background-image: url("/assets/medx/img/main/settings/calendar-icon.svg");
+    padding: 4px;
+    cursor: pointer;
+}
+
+.button-group {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.btn {
+    border: none;
+    background: transparent;
+    font-weight: 550;
+    font-size: 0.95rem;
+    padding: 0.6rem 1.8rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.15s, box-shadow 0.15s, transform 0.1s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+}
+
+.btn-primary {
+    background: #087e90;
+    color: white;
+    width: 160px;
+    height: 36px;
+}
+
+.btn-primary:hover {
+    background: #007C89;
+}
+
+.btn-secondary {
+    background: #CCE5E7;
+    color: #087e90;
+    width: 140px;
+    height: 36px;
+}
+
+.btn-secondary:hover {
+    border-color: #087e90;
+}
+
+
+/* Красивые стили для select как у поисковика */
+.form-section select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%23419AA4' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    padding-right: 40px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.form-section select:hover {
+    border-color: #419AA4;
+}
+
+.form-section select:focus {
+    outline: none;
+    border-color: #419AA4;
+    box-shadow: 0 0 0 3px rgba(65, 154, 164, 0.1);
+}
+
+/* Кастомный скроллбар для select (как у поисковика) */
+.form-section select::-webkit-scrollbar {
+    width: 8px;
+}
+
+.form-section select::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.form-section select::-webkit-scrollbar-thumb {
+    background: #419AA4;
+    border-radius: 10px;
+}
+
+.form-section select::-webkit-scrollbar-thumb:hover {
+    background: #007C89;
+}
+
+
+/* Стиль для первой опции (placeholder) */
+.form-section select option:first-child {
+    background: #CCE5E7;
+    color: #419AA4;
+    font-weight: 500;
+}
+
+/* Стиль для выбранной опции (hover) */
+.form-section select option:checked {
+    background: #419AA4;
+    color: white;
+}
